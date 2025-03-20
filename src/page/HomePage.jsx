@@ -7,6 +7,9 @@ import { FaArrowRightLong } from 'react-icons/fa6';
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { FaArrowRight, FaBuilding } from "react-icons/fa";
 
+import wind from '../assets/gifs/wind.gif'
+import Ourservices from '../components/Homepage/Ourservices';
+
 const HomePage = () => {
   return (
     <div >
@@ -52,7 +55,7 @@ const HomePage = () => {
         </Swiper>
       </section>
       {/* about company  */}
-      <div className=' w-10/12 mx-auto'>
+      <div className=' w-10/12 mx-auto my-20'>
         <div className="relative w-full py-16 px-6 md:px-12 lg:px-24 flex flex-col lg:flex-row items-center gap-20">
           {/* Image Section */}
           <div className="relative w-full lg:w-1/2 flex justify-center">
@@ -88,13 +91,15 @@ const HomePage = () => {
               From pipelines to power cables, our expertise runs deep. We've built a presence in over 55 cities, spanning 14 states.
             </p>
             <p className='mt-3 text-gray-600 max-w-xl'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis deleniti nam nemo quasi earum voluptatem aut iste. Perspiciatis, dicta sunt accusamus id tempore iure a officiis placeat ipsam ex delectus earum cumque!</p>
-
+             <div className=' absolute right-0'>
+                   <img src={wind} alt="" />
+             </div>
             {/* Buttons */}
             <div className="mt-6 flex flex-col md:flex-row gap-4 justify-center lg:justify-start">
-              <button className="flex items-center gap-2 px-5 py-3 bg-gradient-to-r from-blue-500 to-gray-500 text-white rounded-full shadow-lg transition-transform transform hover:scale-105">
-                <FaArrowRight />
-                Explore More
-              </button>
+                <button className="flex items-center gap-2 px-5 py-3 bg-gradient-to-r from-blue-500 to-gray-500 text-white rounded-full shadow-lg transition-transform transform hover:scale-105">
+                  <FaArrowRight />
+                  Explore More
+                </button>
               <button className="flex items-center gap-2 px-5 py-3 bg-gradient-to-r from-blue-500 to-gray-500 text-white rounded-full shadow-lg transition-transform transform hover:scale-105">
                 <FaBuilding />
                 Our Verticals
@@ -103,6 +108,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+      <Ourservices/>
     </div>
   )
 }

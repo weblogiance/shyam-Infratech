@@ -2,6 +2,9 @@ import React from 'react'
 import { BiMailSend } from "react-icons/bi";
 import { MdCallMissedOutgoing } from "react-icons/md";
 
+
+
+
 const Navbar = () => {
   return (
     <div className=' fixed top-0 w-full z-[99]'>
@@ -20,7 +23,7 @@ const Navbar = () => {
                         </ul>
                         <div className='flex gap-x-3'>
                              <button className=' flex items-center gap-x-2 border p-2 rounded-xl'> <BiMailSend size={25} className=' animate-pulse'/> Send To Mail</button>
-                             <button className=' flex items-center gap-x-2 border p-2 rounded-xl bg-black text-white capitalize'><MdCallMissedOutgoing size={25} className=' animate-pulse'/> Contact to team</button>
+                             <button className=' flex items-center gap-x-2 border p-2 rounded-xl bg-gradient-to-r from-blue-500 to-gray-500 text-white capitalize'><MdCallMissedOutgoing size={25} className=' animate-pulse'/> Contact to team</button>
                         </div>
                   </div>
              </nav>
