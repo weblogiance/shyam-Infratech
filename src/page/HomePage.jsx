@@ -14,6 +14,8 @@ import CounterSection from '../components/Homepage/Oursuccess';
 
 import Timelines from '../components/Homepage/Workflow.jsx';
 
+import gas from '../assets/image/cng-gas.jpg'
+
 const HomePage = () => {
   return (
     <div >
@@ -25,11 +27,11 @@ const HomePage = () => {
           }
         } modules={[Navigation]}>
           <SwiperSlide>
-            <div className="relative w-full h-screen flex items-center justify-center text-center text-white">
+            <div className="relative w-full h-screen flex items-center  justify-center text-center text-white">
               {/* Background Image */}
               <div
                 className="absolute inset-0 bg-cover bg-center"
-                style={{ backgroundImage: "url('https://i.pinimg.com/736x/5f/b8/87/5fb88798271a579e48d781ddd1ca9fae.jpg')" }}
+                style={{ backgroundImage: "url('https://i.pinimg.com/736x/26/75/da/2675dabfb68de42feff2c544c281594a.jpg')" }}
               >
                 <div className="absolute  bg-black/50"></div>
               </div>
@@ -44,7 +46,7 @@ const HomePage = () => {
                 </p>
 
                 {/* CTA Button */}
-                <button className="mt-6 px-6 py-3 mx-auto bg-gradient-to-r from-blue-500 to-gray-500 rounded-full text-lg font-semibold shadow-lg flex items-center gap-2">
+                <button className="mt-6 px-6 cursor-pointer py-3 mx-auto bg-gradient-to-r from-blue-500 to-gray-500 rounded-full text-lg font-semibold shadow-lg flex items-center gap-2">
                   Get started now
                   <span className="ml-2"><HiArrowNarrowRight size={20} /></span>
                 </button>
@@ -63,21 +65,11 @@ const HomePage = () => {
         <div className="relative w-full py-16 px-6 md:px-12 lg:px-24 flex flex-col lg:flex-row items-center gap-20">
           {/* Image Section */}
           <div className="relative w-full lg:w-1/2 flex justify-center">
-            <div className="relative w-full max-w-md">
+            <div className="relative w-full max-w-2xl">
               <img
-                src="https://i.pinimg.com/736x/e1/62/34/e1623464a1045fbfa753bd9485243613.jpg"
+                src={gas}
                 alt="Worker 1"
-                className="absolute top-0 left-0   rounded-lg shadow-lg"
-              />
-              <img
-                src="https://i.pinimg.com/736x/a5/76/a6/a576a6197ffd2d7871d237e789c4f803.jpg"
-                alt="Worker 2"
-                className="absolute -top-30 right-30 rounded-lg shadow-lg"
-              />
-              <img
-                src="https://i.pinimg.com/736x/8c/fd/9a/8cfd9a4b0bfe7e4dbfaec6966fcc2974.jpg"
-                alt="Worker 3"
-                className="relative bottom-0 left-30  rounded-lg shadow-lg"
+                className=" rounded-lg shadow-lg"
               />
             </div>
           </div>
