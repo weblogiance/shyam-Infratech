@@ -35,12 +35,12 @@ const Ourservices = () => {
                 <div>
                     {
                         services.map((provide, index) => (
-                            <div className={`flex justify-between ${index%2 !== 0 && "flex-row-reverse"}  items-center space-y-20 gap-20`}>
-                                <div className={` ${index%2 !== 0 ? "rounded-s-2xl" : "rounded-r-2xl"} overflow-hidden h-[840px] w-[740px]`}>
+                            <div className={`flex justify-between  ${index%2 !== 0 ? "flex-row-reverse pl-10 bg-blue-500/20 rounded-s-2xl" :"bg-gray-500/20 rounded-r-2xl pr-5"}  items-center space-y-20 gap-20 `}>
+                                <div className={` ${index%2 !== 0 ? "rounded-s-2xl" : "rounded-r-2xl"} overflow-hidden h-[670px] w-[740px]`}>
                                     <img src={provide.image} alt="" className='w-full h-full' />
                                 </div>
                                 <div className=' flex flex-col gap-y-8'>
-                                    <span className='text-8xl font-bold text-gray-700 opacity-15'>{provide.step}</span>
+                                    <span className='text-6xl font-bold text-gray-700 opacity-15'>{provide.step}</span>
                                     <h1 className='text-5xl font-bold tracking-wide max-w-4xl leading-14'>{provide.energy}</h1>
                                     <p className=' max-w-xl text-gray-500 text-xl text-justify'>{provide.description}</p>
                                     <button className="flex items-center gap-2 px-5 py-3 w-fit bg-gradient-to-r from-blue-500 to-gray-500 text-white rounded-full shadow-lg transition-transform transform hover:scale-105">

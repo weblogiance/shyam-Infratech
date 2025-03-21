@@ -6,9 +6,9 @@ const Footer = () => {
     return (
         <footer className="bg-gray-100 text-gray-700  py-10  ">
             <div className=" w-10/12 mx-auto">
-                <div className="mx-auto flex flex-col md:flex-row md:justify-between items-center">
+                <div className="mx-auto flex flex-col md:flex-row md:justify-between items-start">
                     <div className="text-center md:text-left">
-                        <h2 className="text-xl font-bold">shyam infratech pvt ltd.</h2>
+                        <h2 className="text-xl font-bold capitalize">shyam infratech pvt ltd.</h2>
                         <p className="text-sm mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <div className="mt-3 flex gap-x-8">
                              <div className=" text-center space-y-1">
@@ -55,7 +55,7 @@ const Footer = () => {
                 </div>
 
                 <div className=" mx-auto mt-10 flex flex-col md:flex-row justify-between items-center border-t pt-6 text-sm">
-                    <p>&copy; {new Date().getFullYear()} shyam infratech pvt ltd. All rights reserved</p>
+                    <p className=" capitalize">&copy; {new Date().getFullYear()} shyam infratech pvt ltd. All rights reserved</p>
                     <div className="flex gap-4 mt-4 md:mt-0">
                         <p className="hover:underline cursor-pointer">Privacy Policy</p>
                         <p className="hover:underline cursor-pointer">Terms of Use</p>
