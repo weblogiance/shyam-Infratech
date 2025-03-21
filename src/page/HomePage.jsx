@@ -9,6 +9,7 @@ import { FaArrowRight, FaBuilding } from "react-icons/fa";
 
 import wind from '../assets/gifs/wind.gif'
 import Ourservices from '../components/Homepage/Ourservices';
+import CounterSection from '../components/Homepage/Oursuccess';
 
 const HomePage = () => {
   return (
@@ -109,6 +110,7 @@ const HomePage = () => {
         </div>
       </div>
       <Ourservices/>
+      <CounterSection />
     </div>
   )
 }

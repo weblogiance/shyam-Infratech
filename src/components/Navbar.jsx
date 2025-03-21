@@ -1,4 +1,4 @@
-import React from 'react'
+import React , {useState} from 'react'
 import { BiMailSend } from "react-icons/bi";
 import { MdCallMissedOutgoing } from "react-icons/md";
 
@@ -6,15 +6,22 @@ import { MdCallMissedOutgoing } from "react-icons/md";
 
 
 const Navbar = () => {
+     const [scroll,setscroll] = useState(false)
+    
+
+     window.onscroll = () =>{
+         setscroll(window.pageYOffset === 0 ? false : true)
+         return () => (window.onscroll === null)
+     }
   return (
-    <div className=' fixed top-0 w-full z-[99]'>
-        <div className='w-10/12 flex mx-auto p-5 bg-transparent'>
+    <div className={`fixed top-2 w-full  transition-all duration-400 ease-linear z-[99]`}>
+        <div className={`w-10/12 flex mx-auto p-5 bg-transparent ${scroll ? " shadow-md rounded-2xl bg-white text-gray-500": " text-black"} transition-all duration-500 ease-in-out `}>
              <nav className=' flex justify-between items-center w-full'>
                   <div>
                         <h1>LOGO</h1>
                   </div>
                   <div className='flex gap-x-8'>
-                        <ul className='flex items-center gap-x-3 tracking-wide text-xl'>
+                        <ul className='flex items-center gap-x-5  tracking-wide text-xl'>
                              <li className=' cursor-pointer'>Home</li>
                              <li className=' cursor-pointer'>About Us</li>
                              <li className=' cursor-pointer'>Our Verticals</li>
