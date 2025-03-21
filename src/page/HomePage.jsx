@@ -15,7 +15,7 @@ import CounterSection from '../components/Homepage/Oursuccess';
 import Timelines from '../components/Homepage/Workflow.jsx';
 
 import gas from '../assets/image/cng-gas.jpg'
-import water from '../assets/image/waterbanner.jpg'
+import water from '../assets/image/58546.jpg'
 const HomePage = () => {
   return (
     <div >
@@ -37,11 +37,11 @@ const HomePage = () => {
               </div>
 
               {/* Content */}
-              <div className="relative z-10 bg-white/50 rounded-md leading-14 p-10 px-6">
+              <div className="relative z-10  rounded-md leading-14 p-10 px-6">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl tracking-wide text-gray-950  font-bold">
                   Leading Excellence <br /> in Multi-Industry Solutions
                 </h1>
-                <p className="mt-4 text-lg md:text-xl font-bold tracking-wide text-blue-950">
+                <p className="mt-4 text-lg md:text-xl font-bold tracking-wide text-white">
                   We go beyond ideas, we're passionate about turning bold concepts into real-world solutions.
                 </p>
 
