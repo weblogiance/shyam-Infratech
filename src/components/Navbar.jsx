@@ -14,7 +14,7 @@ const Navbar = () => {
          return () => (window.onscroll === null)
      }
   return (
-    <div className={`fixed top-0 w-full ${scroll ? " shadow-md  bg-white text-gray-500": " text-white"}  transition-all duration-400 ease-linear z-[99]`}>
+    <div className={`fixed top-0 w-full ${scroll ? " shadow-md  bg-white text-gray-500": " text-black"}  transition-all duration-400 ease-linear z-[99]`}>
         <div className={`w-10/12 flex mx-auto p-5 bg-transparent  transition-all duration-500 ease-in-out `}>
              <nav className=' flex justify-between items-center w-full'>
                   <div>
