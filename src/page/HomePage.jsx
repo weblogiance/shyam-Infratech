@@ -15,7 +15,7 @@ import CounterSection from '../components/Homepage/Oursuccess';
 import Timelines from '../components/Homepage/Workflow.jsx';
 
 import gas from '../assets/image/cng-gas.jpg'
-import water from '../assets/image/58546.jpg'
+import water from '../assets/image/waterbanner.jpg'
 const HomePage = () => {
   return (
     <div >
@@ -37,19 +37,19 @@ const HomePage = () => {
               </div>
 
               {/* Content */}
-              <div className="relative z-10  rounded-md leading-14 p-10 px-6">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl tracking-wide text-gray-950  font-bold">
+              <div className="relative z-10 bg-white/50 rounded-md leading-14 p-10 px-6">
+                {/* <h1 className="text-4xl md:text-5xl lg:text-6xl tracking-wide text-gray-950  font-bold">
                   Leading Excellence <br /> in Multi-Industry Solutions
                 </h1>
-                <p className="mt-4 text-lg md:text-xl font-bold tracking-wide text-white">
+                <p className="mt-4 text-lg md:text-xl font-bold tracking-wide text-blue-950">
                   We go beyond ideas, we're passionate about turning bold concepts into real-world solutions.
-                </p>
+                </p> */}
 
                 {/* CTA Button */}
-                <button className="mt-6 px-6 cursor-pointer py-3 mx-auto bg-gradient-to-r from-blue-500 to-gray-500 rounded-full text-lg font-semibold shadow-lg flex items-center gap-2">
+                {/* <button className="mt-6 px-6 cursor-pointer py-3 mx-auto bg-gradient-to-r from-blue-500 to-gray-500 rounded-full text-lg font-semibold shadow-lg flex items-center gap-2">
                   Get started now
                   <span className="ml-2"><HiArrowNarrowRight size={20} /></span>
-                </button>
+                </button> */}
               </div>
             </div>
           </SwiperSlide>
