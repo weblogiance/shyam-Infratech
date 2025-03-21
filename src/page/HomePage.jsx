@@ -7,9 +7,12 @@ import { FaArrowRightLong } from 'react-icons/fa6';
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { FaArrowRight, FaBuilding } from "react-icons/fa";
 
+
 import wind from '../assets/gifs/wind.gif'
 import Ourservices from '../components/Homepage/Ourservices';
 import CounterSection from '../components/Homepage/Oursuccess';
+
+import Timelines from '../components/Homepage/Workflow.jsx';
 
 const HomePage = () => {
   return (
@@ -85,14 +88,14 @@ const HomePage = () => {
             <h2 className="text-3xl max-w-xl md:text-4xl font-bold mt-2 leading-tight">
               We build structures, yes, but more importantly, we build a better future.
             </h2>
-            <p className="mt-4 text-gray-600 max-w-xl">
+            <p className="mt-4 text-gray-600 max-w-xl text-justify">
               We're not just engineers, we're dream weavers. Desco Infratech, headquartered in the Diamond City of India, Surat, transforms bold ideas into groundbreaking solutions across City Gas, Renewables, Water, and Power sectors.
             </p>
-            <p className="mt-3 text-gray-600 max-w-xl">
+            <p className="mt-3 text-gray-600 max-w-xl text-justify">
               From pipelines to power cables, our expertise runs deep. We've built a presence in over 55 cities, spanning 14 states.
             </p>
-            <p className='mt-3 text-gray-600 max-w-xl'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis deleniti nam nemo quasi earum voluptatem aut iste. Perspiciatis, dicta sunt accusamus id tempore iure a officiis placeat ipsam ex delectus earum cumque!</p>
-             <div className=' absolute right-0'>
+            <p className='mt-3 text-gray-600 max-w-xl text-justify'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis deleniti nam nemo quasi earum voluptatem aut iste. Perspiciatis, dicta sunt accusamus id tempore iure a officiis placeat ipsam ex delectus earum cumque!</p>
+             <div className=' absolute right-0 '>
                    <img src={wind} alt="" />
              </div>
             {/* Buttons */}
@@ -111,6 +114,7 @@ const HomePage = () => {
       </div>
       <Ourservices/>
       <CounterSection />
+      <Timelines/>
     </div>
   )
 }

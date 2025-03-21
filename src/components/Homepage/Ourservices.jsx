@@ -30,7 +30,7 @@ const services = [
 ]
 const Ourservices = () => {
     return (
-        <div className=' mt-[20rem]'>
+        <div className=' pt-[10rem] bg-gradient-to-r from-blue-50 to-gray-50'>
             <div className=' w-10/12 flex mx-auto'>
                 <div>
                     {
@@ -42,7 +42,7 @@ const Ourservices = () => {
                                 <div className=' flex flex-col gap-y-8'>
                                     <span className='text-8xl font-bold text-gray-700 opacity-15'>{provide.step}</span>
                                     <h1 className='text-5xl font-bold tracking-wide max-w-4xl leading-14'>{provide.energy}</h1>
-                                    <p className=' max-w-xl text-gray-500 text-xl'>{provide.description}</p>
+                                    <p className=' max-w-xl text-gray-500 text-xl text-justify'>{provide.description}</p>
                                     <button className="flex items-center gap-2 px-5 py-3 w-fit bg-gradient-to-r from-blue-500 to-gray-500 text-white rounded-full shadow-lg transition-transform transform hover:scale-105">
                                         <FaArrowRight />
                                         Explore Project More
