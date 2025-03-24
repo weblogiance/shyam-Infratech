@@ -80,17 +80,17 @@ const ContactPage = () => {
   return (
     <div>
          <div className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100">
-      <section className="relative py-42 px-4 sm:px-6 lg:px-8 bg-white bg-[url(https://i.pinimg.com/736x/6d/99/fc/6d99fc2025984b787e57b69664dab658.jpg)] bg-cover">
+      <section className="relative py-42 px-4 sm:px-6 lg:px-8 bg-white bg-[url(https://i.pinimg.com/736x/2a/2e/7a/2a2e7a423dc613bccd83752877b96b7e.jpg)] bg-contain">
         <div className="max-w-7xl mx-auto">
           <div className="text-center">
             <motion.h1 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              className="text-4xl font-extrabold text-white sm:text-5xl md:text-6xl"
+              className="text-4xl font-extrabold text-black sm:text-5xl md:text-6xl"
             >
               Get in Touch
             </motion.h1>
-            <p className="mt-4 text-xl text-gray-500 max-w-3xl mx-auto">
+            <p className="mt-4 text-xl text-yellow-500 max-w-3xl mx-auto">
               Transform your energy management with our expert solutions. Contact us today to discuss how we can help optimize your energy consumption and reduce costs.
             </p>
             <div className='mt-10 mx-auto w-full  flex items-center justify-center'>

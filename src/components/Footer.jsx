@@ -10,19 +10,19 @@ const Footer = () => {
                     <div className="text-center md:text-left">
                         <h2 className="text-xl font-bold">Shyam infratech</h2>
                         <p className="text-sm mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <div className="mt-3 flex gap-x-8">
-                             <div className=" text-center space-y-1">
+                        <div className="mt-3 flex lg:flex-row flex-col items-center gap-8">
+                             <div className=" text-center flex flex-col items-center justify-center space-y-1">
                                  <span className="flex items-center gap-x-2"><MdCall size={20}/> Contact To Team</span>
                                  <h1>+91 95445 88501</h1>
                              </div>
-                             <div  className=" text-center space-y-1">
+                             <div  className=" text-center flex flex-col items-center justify-center space-y-1">
                                   <span className="flex items-center gap-x-2"><MdOutlineMailOutline size={20}/>Send To Email</span>
                                   <h1>weblogiance@gmail.com</h1>
                              </div>
                         </div>
                     </div>
 
-                    <div className="grid grid-cols-2 md:grid-cols-3 gap-28 mt-6 md:mt-0">   
+                    <div className="grid grid-cols-2 md:grid-cols-3 gap-28 max-sm:gap-6 mt-6 md:mt-0">   
                         <div>
                             <h3 className="font-semibold text-xl ">Company</h3>
                             <ul className="text-base space-y-2 mt-3">
@@ -45,7 +45,7 @@ const Footer = () => {
 
                         <div>
                             <h3 className="font-semibold text-xl">Social</h3>
-                            <ul className="text-base space-y-2 mt-3 flex flex-col items-center cursor-pointer md:items-start">
+                            <ul className="text-base space-y-2 mt-3 flex flex-col  cursor-pointer md:items-start">
                                 <li className="flex items-center gap-2"><FaTwitter /> X (Twitter)</li>
                                 <li className="flex items-center gap-2"><FaLinkedin /> LinkedIn</li>
                                 <li className="flex items-center gap-2"><FaYoutube /> YouTube</li>

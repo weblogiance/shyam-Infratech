@@ -6,13 +6,14 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import ContactPage from './page/ContactPage'
 import Aboutus from './page/Aboutus'
+import Homepage1 from './page/Homepage1'
 
 function App() {
   return (
       <div>
           <Navbar />
           <Routes>
-              <Route path='/' element={<HomePage/>} />
+              <Route path='/' element={<Homepage1/>} />
               <Route path='/contact-us' element={<ContactPage/>} />
               <Route path='/about-us' element={<Aboutus/>} />
           </Routes>

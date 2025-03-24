@@ -29,15 +29,15 @@ const stats = [
 
 const CounterSection = () => {
     return (
-        <div className=" bg-[url(https://i.pinimg.com/736x/28/cc/45/28cc45693bd8691e54b519a91186fe9c.jpg)] bg-fixed bg-cover p-10 ">
+        <div className=" my-10 bg-[url(https://i.pinimg.com/736x/28/cc/45/28cc45693bd8691e54b519a91186fe9c.jpg)] bg-fixed bg-cover p-10 ">
             <div className=" w-10/12 mx-auto ">
-                <div className="flex w-full rounded-2xl bg-black/80 text-white p-10 justify-around">
+                <div className="flex lg:flex-row flex-col  w-full rounded-2xl bg-black/80 text-white lg:p-10 gap-y-10 justify-around">
                     {
                         stats.map((count) => (
                             <div className="flex flex-col items-center justify-center gap-y-3 p-2 ">
                                 <span><count.icons size={50} /></span>
-                                <h1 className="text-5xl font-medium tracking-wide">{count.numbers}</h1>
-                                <p className=" text-3xl tracking-wide font-medium capitalize text-white ">{count.header}</p>
+                                <h1 className="text-5xl font-medium max-sm:text-center tracking-wide max-sm:text-3xl">{count.numbers}</h1>
+                                <p className=" text-3xl tracking-wide font-medium max-sm:text-center capitalize text-white max-sm:text-xl ">{count.header}</p>
                             </div>
                         ))
                     }

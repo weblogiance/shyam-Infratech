@@ -30,30 +30,35 @@ const services = [
 ]
 const Ourservices = () => {
     return (
-        <div className=' pt-[10rem] bg-gradient-to-r from-blue-50 to-gray-50'>
-            <div className=' w-10/12 flex mx-auto'>
-                <div>
-                    {
-                        services.map((provide, index) => (
-                            <div className={`flex justify-between  ${index%2 !== 0 ? "flex-row-reverse pl-10 bg-blue-500/20 rounded-s-2xl" :"bg-gray-500/20 rounded-r-2xl pr-5"}  items-center space-y-20 gap-20 `}>
-                                <div className={` ${index%2 !== 0 ? "rounded-s-2xl" : "rounded-r-2xl"} overflow-hidden h-[670px] w-[740px]`}>
-                                    <img src={provide.image} alt="" className='w-full h-full' />
-                                </div>
-                                <div className=' flex flex-col gap-y-8'>
-                                    <span className='text-6xl font-bold text-gray-700 opacity-15'>{provide.step}</span>
-                                    <h1 className='text-5xl font-bold tracking-wide max-w-4xl leading-14'>{provide.energy}</h1>
-                                    <p className=' max-w-xl text-gray-500 text-xl text-justify'>{provide.description}</p>
-                                    <button className="flex items-center gap-2 px-5 py-3 w-fit bg-gradient-to-r from-blue-500 to-gray-500 text-white rounded-full shadow-lg transition-transform transform hover:scale-105">
-                                        <FaArrowRight />
-                                        Explore Project More
-                                    </button>
-                                </div>
-                            </div>
-                        ))
-                    }
-                </div>
-            </div>
+        <div className="pt-[10rem] bg-gradient-to-r from-blue-50 to-gray-50">
+  <div className="w-10/12 mx-auto flex flex-col max-sm:gap-16">
+    {services.map((provide, index) => (
+      <div
+        key={index}
+        className={`flex flex-col md:flex-row justify-between items-center max-sm:space-y-10 md:space-y-0 gap-10 
+        ${index % 2 !== 0 ? "md:flex-row-reverse md:pl-10 bg-blue-500/20 rounded-s-2xl" : "bg-gray-500/20 rounded-r-2xl md:pr-5"}`}
+      >
+        <div className={`overflow-hidden w-full md:w-[740px] h-[400px] md:h-[670px] ${index % 2 !== 0 ? "rounded-s-2xl" : "rounded-r-2xl"}`}>
+          <img src={provide.image} alt="" className="w-full h-full object-cover" />
         </div>
+        <div className="flex flex-col gap-y-6 text-center md:text-left">
+          <span className="text-5xl md:text-6xl font-bold text-gray-700 opacity-15">{provide.step}</span>
+          <h1 className="text-4xl md:text-5xl font-bold tracking-wide leading-tight max-w-2xl md:max-w-4xl">
+            {provide.energy}
+          </h1>
+          <p className="max-w-md md:max-w-xl text-gray-500 text-lg md:text-xl text-justify">
+            {provide.description}
+          </p>
+          <button className="flex items-center gap-2 px-5 py-3 mx-auto md:mx-0 w-fit bg-gradient-to-r from-blue-500 to-gray-500 text-white rounded-full shadow-lg transition-transform transform hover:scale-105">
+            <FaArrowRight />
+            Explore Project More
+          </button>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
+
     )
 }
 
