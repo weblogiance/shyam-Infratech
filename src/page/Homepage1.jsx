@@ -29,7 +29,7 @@ const Homepage1 = () => {
               <div
                 className="absolute inset-0 bg-cover bg-center"
                 style={{
-                  backgroundImage: `url(https://img.freepik.com/free-vector/green-energy-generated-by-wind-turbine-solar-panel_1308-71824.jpg?t=st=1742626985~exp=1742630585~hmac=38ece25b4715ec25093223e9e013c2b290687099f3ab7b0c873f2de64ed2b536&w=1380)`,
+                  backgroundImage: `url(https://i.pinimg.com/736x/25/ca/06/25ca066653bf6a6275f057ee3aaf6666.jpg)`,
                 }}
               >
                 <div className="absolute inset-0 bg-white/80"></div> {/* Dark Overlay */}
