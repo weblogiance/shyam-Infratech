@@ -15,7 +15,7 @@ import InfratechSteps from '../components/Homepage1/Worksection';
 import Service from '../components/Homepage1/Service';
 import FeaturedProjects from '../components/Homepage1/FeaturedProjects';
 import Testimonials from '../components/Homepage1/Review';
-import main from '../assets/image/waterbanner.jpg'
+import { HiArrowNarrowRight } from "react-icons/hi";
 
 const Homepage1 = () => {
   return (
@@ -59,8 +59,8 @@ const Homepage1 = () => {
 
                 </div>
                 <div className="flex items-center gap-x-10">
-                  <button className="border p-2 cursor-pointer rounded-3xl px-5 bg-gradient-to-r to-blue-500 from-green-500  text-white">
-                    Our Services
+                  <button className="border flex items-center gap-x-2 p-2 cursor-pointer rounded-3xl px-5 bg-gradient-to-r to-blue-500 from-green-500  text-white">
+                    Our Services <HiArrowNarrowRight className=' mt-0.5'/>
                   </button>
                   <span className="flex gap-x-3">
                     <PiPhoneCall size={20} /> +91 63898 50425
