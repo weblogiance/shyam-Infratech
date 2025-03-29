@@ -1,7 +1,7 @@
 import React from 'react';
 import { HiArrowUpRight } from 'react-icons/hi2';
 import ser1 from '../../assets/image/Mask group (1).png'
-import ser2 from '../../assets/image/Mask group (3).png'
+import ser2 from '../../assets/image/Mask group (2).png'
 import ser3 from '../../assets/image/Mask group (3).png'
 import ser0 from '../../assets/image/Mask group.png'
 import { GoArrowUpRight } from "react-icons/go";
@@ -54,7 +54,7 @@ function Future() {
 
                                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                                     <h3 className="text-2xl font-bold mb-2">{card.title}</h3>
-                                    <p className="text-sm text-gray-200">{card.description}</p>
+                                    <p className="text-sm w-[60%] text-gray-200">{card.description}</p>
                                 </div>
                             </div>
                         </div>

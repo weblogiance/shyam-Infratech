@@ -1,70 +1,71 @@
-import { FaTwitter, FaLinkedin, FaYoutube } from "react-icons/fa";
-import { MdOutlineMailOutline } from "react-icons/md";
-import { MdCall } from "react-icons/md";
-
+import React from "react";
+import { FaFacebook ,FaInstagram,FaTwitter} from "react-icons/fa";
 const Footer = () => {
-    return (
-        <footer className="bg-gray-100 text-gray-700  py-10  ">
-            <div className=" w-10/12 mx-auto">
-                <div className="mx-auto flex flex-col md:flex-row md:justify-between items-start">
-                    <div className="text-center md:text-left">
-                        <h2 className="text-xl font-bold">Shyam infratech</h2>
-                        <p className="text-sm mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <div className="mt-3 flex lg:flex-row flex-col items-center gap-8">
-                             <div className=" text-center flex flex-col items-center justify-center space-y-1">
-                                 <span className="flex items-center gap-x-2"><MdCall size={20}/> Contact To Team</span>
-                                 <h1>+91 95445 88501</h1>
-                             </div>
-                             <div  className=" text-center flex flex-col items-center justify-center space-y-1">
-                                  <span className="flex items-center gap-x-2"><MdOutlineMailOutline size={20}/>Send To Email</span>
-                                  <h1>weblogiance@gmail.com</h1>
-                             </div>
-                        </div>
-                    </div>
+  return (
+    <footer className="bg-gray-900 text-white pt-14 pb-5 px-5 md:px-20">
+      <div className="w-11/12 mx-auto flex justify-between gap-20">
+        {/* Logo and Newsletter */}
+        <div>
+          <div className="bg-gray-600 text-white text-center py-4 mb-4">Logo</div>
+          <h3 className="text-lg font-semibold text-green-400">Sign up Our Newsletter</h3>
+          <div className="mt-3 flex">
+            <input
+              type="email"
+              placeholder="Enter Your Email"
+              className="w-full p-2 bg-gray-800 text-white border-none outline-none"
+            />
+            <button className="bg-white text-gray-900 px-4 py-2">Subscribe</button>
+          </div>
+        </div>
 
-                    <div className="grid grid-cols-2 md:grid-cols-3 gap-28 max-sm:gap-6 mt-6 md:mt-0">   
-                        <div>
-                            <h3 className="font-semibold text-xl ">Company</h3>
-                            <ul className="text-base space-y-2 mt-3">
-                                <li>About</li>
-                                <li>Our Verticals</li>
-                                <li>Clients</li>
-                                <li>Career</li>
-                                <li>Contact us</li>
-                            </ul>
-                        </div>
+        {/* Department Section */}
+        <div className="flex gap-x-32">
+        <div>
+          <h3 className="text-lg font-semibold text-green-400">Department</h3>
+          <ul className="mt-3 space-y-2">
+            <li>Water Drainage Solutions</li>
+            <li>Gas Pipeline Services</li>
+            <li>Construction Services</li>
+            <li>Underground Solutions</li>
+          </ul>
+        </div>
 
-                        <div>
-                            <h3 className="font-semibold text-xl">Resources</h3>
-                            <ul className="text-base space-y-2 mt-3">
-                                <li>Documentation</li>
-                                <li>FAQ</li>
-                                <li>Support</li>
-                            </ul>
-                        </div>
+        {/* Company Section */}
+        <div>
+          <h3 className="text-lg font-semibold text-green-400">Company</h3>
+          <ul className="mt-3 space-y-2">
+            <li>Privacy Policy</li>
+            <li>Terms and Condition</li>
+            <li>Complaints Policy</li>
+            <li>Contact and support</li>
+          </ul>
+        </div>
 
-                        <div>
-                            <h3 className="font-semibold text-xl">Social</h3>
-                            <ul className="text-base space-y-2 mt-3 flex flex-col  cursor-pointer md:items-start">
-                                <li className="flex items-center gap-2"><FaTwitter /> X (Twitter)</li>
-                                <li className="flex items-center gap-2"><FaLinkedin /> LinkedIn</li>
-                                <li className="flex items-center gap-2"><FaYoutube /> YouTube</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div className=" mx-auto mt-10 flex flex-col md:flex-row justify-between items-center border-t pt-6 text-sm">
-                    <p >&copy; {new Date().getFullYear()} Shyam infratech  All rights reserved</p>
-                    <div className="flex gap-4 mt-4 md:mt-0">
-                        <p className="hover:underline cursor-pointer">Privacy Policy</p>
-                        <p className="hover:underline cursor-pointer">Terms of Use</p>
-                    </div>
-                </div>
-            </div>
-
-        </footer>
-    );
+        {/* Location Section */}
+        <div>
+          <h3 className="text-lg font-semibold text-green-400">Our Location</h3>
+          <p className="mt-3">
+            B-14 Collins Street West <br /> Victoria 2386 <br /> Iorems Colerfes state
+          </p>
+        </div>
+        </div>
+      </div>
+      
+      {/* Footer Bottom Section */}
+      <div className="mt-10 border-t border-gray-700 pt-5 flex flex-col md:flex-row items-center justify-between">
+        <p>careers@yourdomain.com</p>
+        <p>
+          Copyright Up Construction All Rights Reserved Designed by
+          <span className="text-green-400"> Civil Engineer</span>
+        </p>
+        <div className="flex space-x-4 mt-3 md:mt-0">
+          <span className="bg-gray-800 p-2 rounded-full"><FaFacebook size={25}/></span>
+          <span className="bg-gray-800 p-2 rounded-full"><FaInstagram size={25}/></span>
+          <span className="bg-gray-800 p-2 rounded-full"><FaTwitter size={25}/></span>
+        </div>
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;

@@ -5,6 +5,14 @@ import gas from '../../assets/image/gasline.png'
 import internet from '../../assets/image/cabal.png'
 import way from '../../assets/image/underway.jpeg'
 
+import f1 from '../../assets/image/Frame (1).png'
+import f2 from '../../assets/image/Frame (2).png'
+import f3 from '../../assets/image/Frame (3).png'
+import f4 from '../../assets/image/Frame (4).png'
+import f5 from '../../assets/image/Frame (5).png'
+import f6 from '../../assets/image/Frame (6).png'
+
+
 const suceess = [
     {
         id: 120,
@@ -48,8 +56,18 @@ const serviceName = [
 
 const Work = () => {
     return (
-        <div className='my-20'>
-            <div>
+        <div className='my-20 relative'>
+          
+                        <img src={f1} alt=""className=' absolute top-0 left-20'  />
+                        <img src={f6} alt="" className=' absolute top-50' />
+                        <img src={f5} alt="" className=' absolute left-[345px] top-[200px]'/>
+                 
+                    
+                            <img src={f3} alt="" className=' absolute -top-10 right-[45px]'/>
+                            <img src={f2} alt="" className=' absolute right-[50px] top-[200px]'/>
+                            <img src={f4} alt="" className=' absolute right-[355px] top-[145px]'/>
+                    
+            <div className='relative'>
                 <div className='w-8/12 flex justify-around bg-black gap-12 mx-auto px-10 rounded-2xl py-14'>
                     {
                         suceess.map((item, index) => (
@@ -60,6 +78,7 @@ const Work = () => {
                         ))
                     }
                 </div>
+               
                 <div className='flex mx-auto gap-y-3 flex-col items-center justify-center mt-20'>
                     <h1 className=' text-6xl font-bold text-[#011B24]'>Our Creative Work</h1>
                     <p className=' text-2xl max-w-3xl text-center text-[#7A8D93]'>We Understand the importance of innovation and professionalism and work with the best people to achieve this.</p>
