@@ -7,13 +7,14 @@ import Footer from './components/Footer'
 import ContactPage from './page/ContactPage'
 import Aboutus from './page/Aboutus'
 import Homepage1 from './page/Homepage1'
+import Home from './page/Home'
 
 function App() {
   return (
       <div>
-          <Navbar />
+          {/* <Navbar /> */}
           <Routes>
-              <Route path='/' element={<Homepage1/>} />
+              <Route path='/' element={<Home/>} />
               <Route path='/contact-us' element={<ContactPage/>} />
               <Route path='/about-us' element={<Aboutus/>} />
           </Routes>
