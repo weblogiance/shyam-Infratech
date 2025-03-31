@@ -49,7 +49,7 @@ const Home = () => {
           <img
             src={subimage}
             alt="Construction Work"
-            className="lg:w-[824px]  lg:h-[755px] w-full h-full rounded-4xl shadow-lg"
+            className="lg:w-[724px]  lg:h-[655px] w-full h-full rounded-4xl shadow-lg"
           />
         </div>
       </section>
