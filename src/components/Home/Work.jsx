@@ -92,13 +92,13 @@ const Work = () => {
                         {serviceName.map((card, index) => (
                             <div key={index} className="relative group ">
 
-                                <div className=" w-[302px] xl:w-[402px] xl:h-[463px] h-[363px] rounded-2xl   overflow-hidden">
+                                <div className=" w-[302px]  h-[363px] rounded-2xl   overflow-hidden">
                                     <img
                                         src={card.image}
                                         alt={card.title}
                                         className="w-full h-full object-cover"
                                     />
-                                    <div className="absolute top-0 w-[302px] h-[363px]  xl:w-[402px] xl:h-[463px] rounded-2xl bg-gradient-to-b to-[#011B24]/80 from-0%"></div>
+                                    <div className="absolute top-0 w-[302px] h-[363px]  rounded-2xl bg-gradient-to-b to-[#011B24]/80 from-0%"></div>
 
                                     <div className="absolute bottom-0 left-0 right-0 flex p-6 text-white">
                                         <h3 className="text-2xl w-[60%] font-medium mb-2">{card.title}</h3>
