@@ -1,69 +1,75 @@
-import React, { useState } from "react";
-import { BiMailSend } from "react-icons/bi";
-import { MdCallMissedOutgoing } from "react-icons/md";
+import React, { useState, useEffect } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import { Facebook } from "lucide-react";
-import { FaInstagram,FaFacebook, FaTwitter } from "react-icons/fa6";
+import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa6";
 
 const Navbar = () => {
   const [scroll, setScroll] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
-  window.onscroll = () => {
-    setScroll(window.pageYOffset === 0 ? false : true);
-    return () => (window.onscroll = null);
-  };
+  // Handle Scroll Effect
+  useEffect(() => {
+    const handleScroll = () => setScroll(window.scrollY > 0);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <div
-      className={` fixed top-0 w-full ${scroll ? "shadow-md bg-white text-gray-500" : "text-white"} transition-all duration-400 ease-linear z-[99]`}
+      className={`fixed top-0 w-full z-[99] transition-all duration-300 ${
+        scroll ? "shadow-md bg-white text-gray-900" : "text-white"
+      }`}
     >
-      <div className="w-11/12 flex mx-auto p-5 bg-transparent transition-all duration-500 ease-in-out">
-        <nav className="flex justify-between items-center w-full">
-          {/* Logo */}
-          <div>
-            <h1 className="text-2xl">LOGO</h1>
-          </div>
+      <div className="w-11/12 mx-auto flex justify-between items-center py-4">
+        {/* Logo */}
+        <h1 className="text-2xl font-bold">LOGO</h1>
 
-          {/* Desktop Menu */}
-          <div className="hidden md:flex gap-x-8">
-            <ul className="flex items-center gap-x-5 tracking-wide font-medium text-2xl">
-              <li className="cursor-pointer hover:text-blue-500">Home</li>
-              <li className="cursor-pointer hover:text-blue-500">About Us</li>
-              <li className="cursor-pointer hover:text-blue-500">Our Verticals</li>
-              <li className="cursor-pointer hover:text-blue-500">Career</li>
-              <li className="cursor-pointer hover:text-blue-500">Contact Us</li>
-            </ul>
-          </div>
-            <div className="flex gap-x-5">
-                  <FaFacebook size={30} className="cursor-pointer hover:text-blue-500" /> 
-                  <FaTwitter size={30} className="cursor-pointer hover:text-blue-500" />
-                  <FaInstagram size={30} className="cursor-pointer hover:text-blue-500" />
-            </div>
+        {/* Desktop Menu */}
+        <ul className="hidden md:flex gap-x-8 text-lg font-medium">
+          {["Home", "About Us", "Our Verticals", "Career", "Contact Us"].map(
+            (item) => (
+              <li key={item} className="cursor-pointer hover:text-blue-500">
+                {item}
+              </li>
+            )
+          )}
+        </ul>
 
-          {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center">
-            <button onClick={() => setMenuOpen(!menuOpen)}>
-              {menuOpen ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
-            </button>
-          </div>
-        </nav>
+        {/* Social Icons */}
+        <div className="hidden md:flex gap-x-5">
+          <FaFacebook size={24} className="cursor-pointer hover:text-blue-500" />
+          <FaTwitter size={24} className="cursor-pointer hover:text-blue-500" />
+          <FaInstagram size={24} className="cursor-pointer hover:text-blue-500" />
+        </div>
+
+        {/* Mobile Menu Button */}
+        <button className="md:hidden" onClick={() => setMenuOpen(!menuOpen)}>
+          {menuOpen ? <AiOutlineClose size={28} /> : <AiOutlineMenu size={28} />}
+        </button>
       </div>
 
       {/* Mobile Menu */}
       <div
-        className={`fixed top-0 right-0 h-full bg-white w-3/4 shadow-md p-5 transform ${menuOpen ? "translate-x-0" : "translate-x-full"} transition-transform duration-500 ease-in-out md:hidden`}
+        className={`fixed inset-0 bg-white shadow-lg p-6 transform ${
+          menuOpen ? "translate-x-0" : "translate-x-full"
+        } transition-transform duration-300 ease-in-out md:hidden`}
       >
         <button onClick={() => setMenuOpen(false)} className="absolute top-5 right-5">
-          <AiOutlineClose size={30} />
+          <AiOutlineClose size={28} />
         </button>
-        <ul className="flex flex-col items-start gap-y-5 mt-10 text-lg">
-          <li className="cursor-pointer hover:text-blue-500">Home</li>
-          <li className="cursor-pointer hover:text-blue-500">About Us</li>
-          <li className="cursor-pointer hover:text-blue-500">Our Verticals</li>
-          <li className="cursor-pointer hover:text-blue-500">Career</li>
-          <li className="cursor-pointer hover:text-blue-500">Contact Us</li>
+        <ul className="flex flex-col gap-6 mt-14 text-xl font-medium">
+          {["Home", "About Us", "Our Verticals", "Career", "Contact Us"].map(
+            (item) => (
+              <li key={item} className="cursor-pointer hover:text-blue-500">
+                {item}
+              </li>
+            )
+          )}
         </ul>
+        <div className="mt-8 flex gap-x-6">
+          <FaFacebook size={28} className="cursor-pointer hover:text-blue-500" />
+          <FaTwitter size={28} className="cursor-pointer hover:text-blue-500" />
+          <FaInstagram size={28} className="cursor-pointer hover:text-blue-500" />
+        </div>
       </div>
     </div>
   );

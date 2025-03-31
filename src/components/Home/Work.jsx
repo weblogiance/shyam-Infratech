@@ -56,7 +56,7 @@ const serviceName = [
 
 const Work = () => {
     return (
-        <div className='my-20 relative'>
+        <div className='my-20 relative overflow-hidden'>
           
                         <img src={f1} alt=""className=' absolute top-0 left-20'  />
                         <img src={f6} alt="" className=' absolute top-50' />
@@ -68,23 +68,27 @@ const Work = () => {
                             <img src={f4} alt="" className=' absolute right-[355px] top-[145px]'/>
                     
             <div className='relative'>
-                <div className='w-8/12 flex justify-around bg-black gap-12 mx-auto px-10 rounded-2xl py-14'>
+                <div className='w-8/12 max-sm:w-full flex lg:flex-row flex-col justify-around bg-black max-sm:bg-black/90  gap-12 mx-auto px-10 rounded-2xl py-14'>
                     {
                         suceess.map((item, index) => (
-                            <div key={index} className='flex flex-col tracking-wide capitalize items-center gap-3  justify-center'>
+                          <>
+                              <div key={index} className='flex flex-col tracking-wide capitalize items-center gap-3  justify-center'>
                                 <h1 className='text-4xl font-bold text-[#78C448] '>{item.id}+</h1>
                                 <p className='text-lg text-white font-semibold'>{item.title}</p>
                             </div>
+                            <hr />
+                          </>
+                            
                         ))
                     }
                 </div>
                
                 <div className='flex mx-auto gap-y-3 flex-col items-center justify-center mt-20'>
-                    <h1 className=' text-6xl font-bold text-[#011B24]'>Our Creative Work</h1>
-                    <p className=' text-2xl max-w-3xl text-center text-[#7A8D93]'>We Understand the importance of innovation and professionalism and work with the best people to achieve this.</p>
+                    <h1 className=' text-6xl max-sm:text-4xl font-bold text-[#011B24]'>Our Creative Work</h1>
+                    <p className=' text-2xl max-sm:text-base max-w-3xl text-center text-[#7A8D93]'>We Understand the importance of innovation and professionalism and work with the best people to achieve this.</p>
                 </div>
                 <div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 w-11/12 gap-x-5 my-10 place-items-center  mx-auto mt-10 lg:grid-cols-4 ">
+                    <div className="grid grid-cols-1 md:grid-cols-2 w-11/12 gap-x-5 gap-y-5 my-10 place-items-center  mx-auto mt-10 lg:grid-cols-4 ">
                         {serviceName.map((card, index) => (
                             <div key={index} className="relative group ">
 
