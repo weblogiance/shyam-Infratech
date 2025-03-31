@@ -35,7 +35,7 @@ function Future() {
     return (
         <div className="bg-[#EBF5FB] mt-10 py-12 px-4 sm:px-6 lg:px-8">
             <div className=" w-full mx-auto">
-                <h1 className="text-4xl max-w-[800px] mx-auto leading-16 capitalize md:text-5xl font-bold text-center mb-4">
+                <h1 className="lg:text-4xl text-2xl leading-10 max-w-[800px] mx-auto lg:leading-16 capitalize md:text-5xl font-bold text-center mb-4">
                     Empowering a Sustainable Future with Renewable Energy
                 </h1>
                 <div className="grid grid-cols-1 md:grid-cols-2 mt-10 lg:grid-cols-4 gap-6">

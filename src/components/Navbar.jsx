@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <div
       className={`fixed top-0 w-full z-[99] transition-all duration-300 ${
-        scroll ? "shadow-md bg-white text-gray-900" : "text-white"
+        scroll ? "shadow-md bg-white text-gray-900" : "lg:text-white "
       }`}
     >
       <div className="w-11/12 mx-auto flex justify-between items-center py-4">
