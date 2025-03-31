@@ -24,7 +24,7 @@ const Navbar = () => {
         <h1 className="text-2xl font-bold">LOGO</h1>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex gap-x-8 text-lg font-medium">
+        <ul className="hidden md:flex gap-x-8  font-medium">
           {["Home", "About Us", "Our Verticals", "Career", "Contact Us"].map(
             (item) => (
               <li key={item} className="cursor-pointer hover:text-blue-500">

@@ -21,7 +21,7 @@ const Home = () => {
               <img src={bg} alt="" className='w-full lg:h-screen h-[50vh] object-cover' />
             <img src={front} alt="" className='absolute top-0 left-0 w-full lg:h-screen h-[50vh] object-cover' />
             <div className='absolute w-11/12 top-0 left-[50%] -translate-x-[50%] mx-auto gap-y-10 lg:h-screen h-[50vh] flex items-start justify-center flex-col'>
-                  <h1 className=' text-8xl max-sm:text-4xl max-w-5xl font-semibold text-white leading-snug '>Reliable Infrastructure Solution for a Better Tomorrow</h1>
+                  <h1 className='text-7xl  max-sm:text-4xl max-w-5xl font-semibold text-white leading-snug '>Reliable Infrastructure Solution for a Better Tomorrow</h1>
                    <button className=' text-white bg-[#78C448] py-3 px-6 rounded-2xl tracking-widest'>Free Consultation </button>
             </div>
               </div>

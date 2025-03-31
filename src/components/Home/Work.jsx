@@ -68,13 +68,13 @@ const Work = () => {
                             <img src={f4} alt="" className=' absolute right-[355px] top-[145px]'/>
                     
             <div className='relative'>
-                <div className='w-8/12 max-sm:w-full flex lg:flex-row flex-col justify-around bg-black max-sm:bg-black/90  gap-12 mx-auto px-10 rounded-2xl py-14'>
+                <div className='w-8/12 max-sm:w-full flex lg:flex-row flex-col justify-around bg-black max-sm:bg-black/90   mx-auto px-10 rounded-2xl py-14'>
                     {
                         suceess.map((item, index) => (
                           <>
-                              <div key={index} className='flex flex-col tracking-wide capitalize items-center gap-3  justify-center'>
+                              <div key={index} className='flex  w-full flex-col tracking-wide capitalize items-center gap-3  justify-center text-center'>
                                 <h1 className='text-4xl font-bold text-[#78C448] '>{item.id}+</h1>
-                                <p className='text-lg text-white font-semibold'>{item.title}</p>
+                                <p className='text-md text-white font-semibold '>{item.title}</p>
                             </div>
                             <hr />
                           </>
@@ -92,16 +92,16 @@ const Work = () => {
                         {serviceName.map((card, index) => (
                             <div key={index} className="relative group ">
 
-                                <div className=" w-[402px] h-[463px] rounded-2xl   overflow-hidden">
+                                <div className=" w-[302px] xl:w-[402px] xl:h-[463px] h-[363px] rounded-2xl   overflow-hidden">
                                     <img
                                         src={card.image}
                                         alt={card.title}
                                         className="w-full h-full object-cover"
                                     />
-                                    <div className="absolute top-0 w-[402px] h-[463px] rounded-2xl bg-gradient-to-b to-[#011B24]/80 from-0%"></div>
+                                    <div className="absolute top-0 w-[302px] h-[363px]  xl:w-[402px] xl:h-[463px] rounded-2xl bg-gradient-to-b to-[#011B24]/80 from-0%"></div>
 
                                     <div className="absolute bottom-0 left-0 right-0 flex p-6 text-white">
-                                        <h3 className="text-3xl w-[60%] font-medium mb-2">{card.title}</h3>
+                                        <h3 className="text-2xl w-[60%] font-medium mb-2">{card.title}</h3>
 
                                     </div>
                                 </div>

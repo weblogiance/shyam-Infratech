@@ -59,15 +59,17 @@ const Footer = () => {
       </div>
 
       {/* Footer Bottom Section */}
-      <div className="mt-10 border-t border-gray-700 pt-5 flex flex-wrap items-center justify-between gap-5">
-        <p className="w-full md:w-auto text-center md:text-left">
+      <div className="flex justify-center items-center w">
+      <div className="mt-10 border-t    border-gray-700 pt-5 flex w-11/12 items-center mx-auto   gap-5">
+        <p className="w-full ">
           careers@yourdomain.com
         </p>
-        <p className="w-full md:w-auto  text-center md:text-left">
+        <p className="w-full">
           Copyright Up Construction All Rights Reserved Designed by
           <span className="text-green-400"> Civil Engineer</span>
         </p>
-        <div className="flex mx-auto space-x-4">
+        
+        <div className="flex gap-x-3">
           <span className="bg-gray-800 p-2 rounded-full">
             <FaFacebook size={25} />
           </span>
@@ -78,6 +80,7 @@ const Footer = () => {
             <FaTwitter size={25} />
           </span>
         </div>
+      </div>
       </div>
     </footer>
   );
