@@ -1,5 +1,6 @@
 import React from 'react'
 import service from '../../assets/image/homeg.png'
+import { MdArrowOutward } from "react-icons/md";
 
 const services = [
     {
@@ -47,15 +48,15 @@ const Ourservice = () => {
                </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 place-content-center w-8/12 mt-10  mx-auto">
                     {services.map((service, index) => (
-                        <div key={index} className={` text-center p-6 border-[#D2D2D2] border border-t-0 border-l-0  relative ${index == 2 && "border-b-0"} ${index == 1 && "border-r-0"} ${index == 3 && "border-b-0 border-r-0"}`}>
+                        <div key={index} className={` text-center p-6 border-[#D2D2D2] border border-t-0 border-l-0  relative ${index == 2 && "lg:border-b-0"} ${index == 1 && "lg:border-r-0"} ${index == 3 && "lg:border-b-0 lg:border-r-0"}`}>
                             <h3 className="text-4xl  mb-4">{service.title}</h3>
                             <ul className={`${index == 0 ? " grid grid-cols-2 leading-0 ":"flex flex-col gap-y-2"} gap-4 mx-auto`}>
                                 {service.points.map((point, i) => (
                                     <li key={i} className=" text-sm list-disc w-fit mx-auto text-[#7A8D93] ">{point}</li>
                                 ))}
                             </ul>
-                            <button className="mt-4 mx-auto bg-[#78C448] text-white px-5 py-3 rounded-lg text-sm flex items-center">
-                                Read More <span className="ml-2">↗</span>
+                            <button className="mt-4 mx-auto text-lg bg-[#78C448] text-white px-5 gap-x-3 py-3 rounded-lg  flex items-center">
+                                Read More <span><MdArrowOutward size={30}/></span>
                             </button>
                         </div>
                     ))}

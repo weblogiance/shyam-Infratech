@@ -84,17 +84,17 @@ const Work = () => {
                     <p className=' text-2xl max-w-3xl text-center text-[#7A8D93]'>We Understand the importance of innovation and professionalism and work with the best people to achieve this.</p>
                 </div>
                 <div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 w-10/12 my-10 mx-auto mt-10 lg:grid-cols-4 ">
+                    <div className="grid grid-cols-1 md:grid-cols-2 w-11/12 gap-x-5 my-10 place-items-center  mx-auto mt-10 lg:grid-cols-4 ">
                         {serviceName.map((card, index) => (
                             <div key={index} className="relative group ">
 
-                                <div className=" w-[302px] h-[363px] rounded-2xl   overflow-hidden">
+                                <div className=" w-[402px] h-[463px] rounded-2xl   overflow-hidden">
                                     <img
                                         src={card.image}
                                         alt={card.title}
                                         className="w-full h-full object-cover"
                                     />
-                                    <div className="absolute top-0 w-[302px] h-[363px] rounded-2xl bg-gradient-to-b to-[#011B24]/80 from-0%"></div>
+                                    <div className="absolute top-0 w-[402px] h-[463px] rounded-2xl bg-gradient-to-b to-[#011B24]/80 from-0%"></div>
 
                                     <div className="absolute bottom-0 left-0 right-0 flex p-6 text-white">
                                         <h3 className="text-3xl w-[60%] font-medium mb-2">{card.title}</h3>

@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { BiMailSend } from "react-icons/bi";
 import { MdCallMissedOutgoing } from "react-icons/md";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { Facebook } from "lucide-react";
+import { FaInstagram,FaFacebook, FaTwitter } from "react-icons/fa6";
 
 const Navbar = () => {
   const [scroll, setScroll] = useState(false);
@@ -14,33 +16,30 @@ const Navbar = () => {
 
   return (
     <div
-      className={` fixed top-0 w-full ${scroll ? "shadow-md bg-white text-gray-500" : "text-black"} transition-all duration-400 ease-linear z-[99]`}
+      className={` fixed top-0 w-full ${scroll ? "shadow-md bg-white text-gray-500" : "text-white"} transition-all duration-400 ease-linear z-[99]`}
     >
-      <div className="w-10/12 flex mx-auto p-5 bg-transparent transition-all duration-500 ease-in-out">
+      <div className="w-11/12 flex mx-auto p-5 bg-transparent transition-all duration-500 ease-in-out">
         <nav className="flex justify-between items-center w-full">
           {/* Logo */}
           <div>
-            <h1>LOGO</h1>
+            <h1 className="text-2xl">LOGO</h1>
           </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex gap-x-8">
-            <ul className="flex items-center gap-x-5 tracking-wide text-xl">
+            <ul className="flex items-center gap-x-5 tracking-wide font-medium text-2xl">
               <li className="cursor-pointer hover:text-blue-500">Home</li>
               <li className="cursor-pointer hover:text-blue-500">About Us</li>
               <li className="cursor-pointer hover:text-blue-500">Our Verticals</li>
               <li className="cursor-pointer hover:text-blue-500">Career</li>
               <li className="cursor-pointer hover:text-blue-500">Contact Us</li>
             </ul>
-            <div className="flex gap-x-3">
-              <button className="flex items-center gap-x-2 border p-2 rounded-xl">
-                <BiMailSend size={25} className="animate-pulse" /> Send To Mail
-              </button>
-              <button className="flex items-center gap-x-2 border p-2 rounded-xl bg-gradient-to-r to-blue-500 from-green-500 text-white capitalize">
-                <MdCallMissedOutgoing size={25} className="animate-pulse" /> Contact to team
-              </button>
-            </div>
           </div>
+            <div className="flex gap-x-5">
+                  <FaFacebook size={30} className="cursor-pointer hover:text-blue-500" /> 
+                  <FaTwitter size={30} className="cursor-pointer hover:text-blue-500" />
+                  <FaInstagram size={30} className="cursor-pointer hover:text-blue-500" />
+            </div>
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center">
