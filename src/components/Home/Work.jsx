@@ -68,7 +68,7 @@ const Work = () => {
                             <img src={f4} alt="" className=' absolute right-[355px] top-[145px]'/>
                     
             <div className='relative'>
-                <div className='w-8/12 max-sm:w-full flex lg:flex-row flex-col justify-around bg-black max-sm:bg-black/90   mx-auto px-10 rounded-2xl py-14'>
+                <div className='w-8/12 max-sm:w-full flex lg:flex-row flex-col gap-y-10 justify-around bg-black max-sm:bg-black/90   mx-auto px-10 rounded-2xl py-14'>
                     {
                         suceess.map((item, index) => (
                           <>
@@ -88,7 +88,7 @@ const Work = () => {
                     <p className=' text-2xl max-sm:text-base max-w-3xl text-center text-[#7A8D93]'>We Understand the importance of innovation and professionalism and work with the best people to achieve this.</p>
                 </div>
                 <div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 w-11/12 gap-x-5 gap-y-5 my-10 place-items-center  mx-auto mt-10 lg:grid-cols-4 ">
+                    <div className="flex lg:flex-row flex-col justify-center items-center gap-x-20 w-11/12  gap-y-5 my-10 place-items-center  mx-auto mt-10 lg:grid-cols-4 ">
                         {serviceName.map((card, index) => (
                             <div key={index} className="relative group ">
 

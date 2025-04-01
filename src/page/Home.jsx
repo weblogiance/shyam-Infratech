@@ -27,7 +27,7 @@ const Home = () => {
               </div>
           </div>
       </section>
-      <section className="w-10/12  gap-x-30 gap-y-5 mx-auto flex lg:flex-row flex-col items-center justify-between mb-10">
+      <section className="w-10/12  gap-x-30 gap-y-5 mx-auto flex lg:flex-row flex-col items-center justify-center mb-10">
         {/* Text Content */}
         <div className='lg:w-1/2 w-full'>
           <h2 className="text-4xl leading-13 max-w-sm font-bold text-gray-900">
