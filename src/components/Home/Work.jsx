@@ -68,7 +68,7 @@ const Work = () => {
                             <img src={f4} alt="" className=' absolute right-[355px] top-[145px]'/>
                     
             <div className='relative'>
-                <div className='w-8/12 max-sm:w-full flex lg:flex-row flex-col gap-y-10 justify-around bg-black max-sm:bg-black/90   mx-auto px-10 rounded-2xl py-14'>
+                <div className='w-8/12 max-sm:w-11/12 flex lg:flex-row flex-col gap-y-10 justify-around bg-black max-sm:bg-black/90   mx-auto px-10 rounded-2xl py-14'>
                     {
                         suceess.map((item, index) => (
                           <>
@@ -76,7 +76,7 @@ const Work = () => {
                                 <h1 className='text-4xl font-bold text-[#78C448] '>{item.id}+</h1>
                                 <p className='text-md text-white font-semibold '>{item.title}</p>
                             </div>
-                            <hr />
+                            <hr className={` border-white ${index == 3 && "hidden"}`}/>
                           </>
                             
                         ))
@@ -92,13 +92,13 @@ const Work = () => {
                         {serviceName.map((card, index) => (
                             <div key={index} className="relative group ">
 
-                                <div className=" w-[302px]  h-[363px] rounded-2xl   overflow-hidden">
+                                <div className=" w-[302px] max-sm:w-[340px]  h-[363px] rounded-2xl   overflow-hidden">
                                     <img
                                         src={card.image}
                                         alt={card.title}
                                         className="w-full h-full object-cover"
                                     />
-                                    <div className="absolute top-0 w-[302px] h-[363px]  rounded-2xl bg-gradient-to-b to-[#011B24]/80 from-0%"></div>
+                                    <div className="absolute top-0 w-[302px] max-sm:w-[340px] h-[363px]  rounded-2xl bg-gradient-to-b to-[#011B24]/80 from-0%"></div>
 
                                     <div className="absolute bottom-0 left-0 right-0 flex p-6 text-white">
                                         <h3 className="text-2xl w-[60%] font-medium mb-2">{card.title}</h3>

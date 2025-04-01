@@ -50,7 +50,7 @@ const Ourservice = () => {
                     {services.map((service, index) => (
                         <div key={index} className={` text-center p-6 border-[#D2D2D2] border lg:border-t-0 lg:border-l-0  relative ${index == 2 && "border-b-0"} ${index == 1 && "border-r-0"} ${index == 3 && "border-b-0 border-r-0"}`}>
                             <h3 className="text-4xl  mb-4">{service.title}</h3>
-                            <ul className={`${index == 0 ? " grid grid-cols-2 leading-0 ":"flex flex-col gap-y-2"} gap-4 mx-auto`}>
+                            <ul className={`${index == 0 ? " grid grid-cols-2 max-sm:grid-cols-1 leading-0 ":"flex flex-col gap-y-2"} gap-4 mx-auto`}>
                                 {service.points.map((point, i) => (
                                     <li key={i} className=" text-sm list-disc w-fit mx-auto text-[#7A8D93] ">{point}</li>
                                 ))}
