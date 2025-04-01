@@ -27,32 +27,33 @@ const Home = () => {
               </div>
           </div>
       </section>
-      <section className="w-10/12  gap-x-30 gap-y-5 mx-auto flex lg:flex-row flex-col items-center justify-center mb-10">
-        {/* Text Content */}
-        <div className='lg:w-1/2 w-full'>
-          <h2 className="text-4xl leading-13 max-w-sm font-bold text-gray-900">
-            Providing all kinds of Construction Services
-          </h2>
-          <p className="mt-4 text-xl max-w-xl leading-8 text-gray-600 font-medium">
-            Our construction company has been founded 10 years ago, at the very peak of the building frenzy in the US...
-          </p>
-          <p className="mt-4 text-gray-500 max-w-2xl text-justify leading-relaxed">
-            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet model.of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, or non-characteristic words etc.
-          </p>
-          <button className="mt-6 px-6 py-3 border border-[#78C448] tracking-wide text-gray-900 font-semibold rounded-lg hover:bg-gray-900 hover:text-white transition">
-            Free Consultation
-          </button>
-        </div>
+      <section className="w-10/12 mx-auto flex flex-wrap lg:flex-nowrap items-center justify-center gap-10 mb-10">
+  {/* Text Content */}
+  <div className="lg:w-1/2 w-full text-center lg:text-left">
+    <h2 className="text-4xl leading-[3.5rem] max-w-sm font-bold text-gray-900">
+      Providing all kinds of Construction Services
+    </h2>
+    <p className="mt-4 text-xl max-w-xl leading-8 text-gray-600 font-medium">
+      Our construction company has been founded 10 years ago, at the very peak of the building frenzy in the US...
+    </p>
+    <p className="mt-4 text-gray-500 max-w-2xl text-justify leading-relaxed">
+    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet model.of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, or non-characteristic words etc.
+    </p>
+    <button className="mt-6 px-6 py-3 border border-[#78C448] tracking-wide text-gray-900 font-semibold rounded-lg hover:bg-gray-900 hover:text-white transition">
+      Free Consultation
+    </button>
+  </div>
 
-        {/* Image Section */}
-        <div className="lg:w-1/2 w-full ">
-          <img
-            src={subimage}
-            alt="Construction Work"
-            className="lg:w-[724px]  lg:h-[655px] w-full h-full rounded-4xl shadow-lg"
-          />
-        </div>
-      </section>
+  {/* Image Section */}
+  <div className="lg:w-1/2 w-full flex justify-center">
+    <img
+      src={subimage}
+      alt="Construction Work"
+      className="w-full max-w-[724px] h-auto rounded-4xl shadow-lg"
+    />
+  </div>
+</section>
+
       <Ourservice />
       <Future />
       <Work />

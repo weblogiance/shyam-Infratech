@@ -46,7 +46,7 @@ const Ourservice = () => {
                     <h2 className="text-center mx-auto absolute bottom-0 max-sm:-bottom-5 max-sm:text-3xl text-7xl font-semibold mb-10">Over Services </h2>
                     <img src={service} alt="" className=' w-full grayscale' />
                </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 place-content-center lg:w-8/12 w-full  mt-10  mx-auto overflow-hidden">
+                <div className="grid grid-cols-1 md:grid-cols-2 place-content-center md:w-11/12  lg:w-11/12 w-full  mt-10  mx-auto overflow-hidden">
                     {services.map((service, index) => (
                         <div key={index} className={` text-center p-6 border-[#D2D2D2] border lg:border-t-0 lg:border-l-0  relative ${index == 2 && "border-b-0"} ${index == 1 && "border-r-0"} ${index == 3 && "border-b-0 border-r-0"}`}>
                             <h3 className="text-4xl  mb-4">{service.title}</h3>
