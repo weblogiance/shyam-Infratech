@@ -1,7 +1,25 @@
+import { link } from "framer-motion/client";
 import React, { useState, useEffect } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
+const service = [ {
+    name:"Home",
+    link:"/"
+}, {
+    name:"About Us", 
+    link:"/about-us"
+}, {
+    name:"Our Verticals",
+    link:"/our-verticals"
+}, {
+    name:"Career",
+    link:"/career"
+}, {  
+    name:"Contact Us",
+    link:"/contact-us"
+}]
 const Navbar = () => {
   const [scroll, setScroll] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -25,11 +43,13 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-x-8  font-medium">
-          {["Home", "About Us", "Our Verticals", "Career", "Contact Us"].map(
+          {service.map(
             (item) => (
-              <li key={item} className="cursor-pointer hover:text-blue-500">
-                {item}
-              </li>
+               <Link to={item.link} >
+                <li className="cursor-pointer hover:text-[#78C448]">
+                  {item.name}
+                </li>   
+              </Link>
             )
           )}
         </ul>
