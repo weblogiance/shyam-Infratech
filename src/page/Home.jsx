@@ -27,7 +27,7 @@ const Home = () => {
               </div>
           </div>
       </section>
-      <section className="w-10/12 mx-auto flex flex-wrap lg:flex-nowrap items-center justify-center gap-10 mb-10">
+      <section className="w-10/12 mx-auto mt-5 flex flex-wrap lg:flex-nowrap items-center justify-center gap-10 mb-10">
   {/* Text Content */}
   <div className="lg:w-1/2 w-full text-center lg:text-left">
     <h2 className="text-4xl leading-[3.5rem] max-w-sm font-bold text-gray-900">
@@ -49,7 +49,7 @@ const Home = () => {
     <img
       src={subimage}
       alt="Construction Work"
-      className="w-full max-w-[724px] h-auto rounded-4xl shadow-lg"
+      className="w-full max-w-[824px] h-auto rounded-4xl shadow-lg"
     />
   </div>
 </section>
