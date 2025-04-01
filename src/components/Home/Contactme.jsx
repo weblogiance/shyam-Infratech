@@ -15,7 +15,7 @@ const ContactForm = () => {
           </div>
           <div className=" space-y-2">
             <label className="block text-lg text-gray-700 font-semibold">Phone Number</label>
-            <input type="tel" className="w-full p-4 border border-gray-300 rounded-md bg-[#EBF5FB] focus:outline-none focus:ring-2 focus:ring-blue-500" />
+            <input type="tel" minLength={10} maxLength={10} className="w-full p-4 border border-gray-300 rounded-md bg-[#EBF5FB] focus:outline-none focus:ring-2 focus:ring-blue-500" />
           </div>
           <div className=" space-y-2">
             <label className="block text-lg text-gray-700 font-semibold">Message</label>
