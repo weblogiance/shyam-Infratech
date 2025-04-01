@@ -88,7 +88,7 @@ const Work = () => {
                     <p className=' text-2xl max-sm:text-base max-w-3xl text-center text-[#7A8D93]'>We Understand the importance of innovation and professionalism and work with the best people to achieve this.</p>
                 </div>
                 <div>
-                    <div className="flex lg:flex-row flex-col justify-center items-center gap-x-20 w-full  gap-y-5 my-10 place-items-center  mx-auto mt-10 lg:grid-cols-4 ">
+                    <div className="flex lg:flex-row flex-col justify-center items-center gap-x-10 w-full  gap-y-5 my-10 place-items-center  mx-auto mt-10 lg:grid-cols-4 ">
                         {serviceName.map((card, index) => (
                             <div key={index} className="relative group ">
 
