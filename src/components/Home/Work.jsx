@@ -63,7 +63,7 @@ const Work = () => {
                         <img src={f5} alt="" className=' absolute left-[345px] top-[200px]'/>
                  
                     
-                            <img src={f3} alt="" className=' absolute -top-10 right-[45px]'/>
+                            <img src={f3} alt="" className=' absolute -top-3 right-[45px]'/>
                             <img src={f2} alt="" className=' absolute right-[50px] top-[200px]'/>
                             <img src={f4} alt="" className=' absolute right-[355px] top-[145px]'/>
                     

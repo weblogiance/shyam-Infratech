@@ -1,9 +1,9 @@
 import React from 'react';
 import { HiArrowUpRight } from 'react-icons/hi2';
-import ser1 from '../../assets/image/Mask group (1).png'
-import ser2 from '../../assets/image/Mask group (2).png'
-import ser3 from '../../assets/image/Mask group (3).png'
-import ser0 from '../../assets/image/Mask group.png'
+import ser1 from '../../assets/image/powerE.png'
+import ser2 from '../../assets/image/gasE.png'
+import ser3 from '../../assets/image/solarE.png'
+import ser0 from '../../assets/image/waterE.png'
 import { GoArrowUpRight } from "react-icons/go";
 
 const cards = [
@@ -23,7 +23,7 @@ const cards = [
         image:ser2
     },
     {
-        title: "Water Management",
+        title: "Solar Management",
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
         image:ser3
     }
@@ -41,9 +41,9 @@ function Future() {
                 <div className="grid grid-cols-1 md:grid-cols-2 mt-10 lg:grid-cols-4 gap-6">
                     {cards.map((card, index) => (
                         <div key={index} className="relative group overflow-hidden rounded-lg">
-                            <div className=' absolute top-3 z-[2] right-0 bg-[#78C448] w-20 h-20 flex items-center justify-center rounded-full '>
+                            {/* <div className=' absolute top-3 z-[2] right-0 bg-[#78C448] w-20 h-20 flex items-center justify-center rounded-full '>
                                  <button><GoArrowUpRight size={40} color='white'/></button>
-                            </div>
+                            </div> */}
                             <div className="relative  w-full overflow-hidden">
                                 <img
                                     src={card.image}
