@@ -56,11 +56,11 @@ const ContactPage = () => {
           <div className=' grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-x-5 gap-y-8  w-10/12 mx-auto'>
             {
               service.map((step, index) => (
-                <div className=' border flex flex-col gap-y-10 px-5 border-[#BFBFBE] justify-center  w-[284.45px] h-[300.17px] rounded-2xl mx-auto'>
+                <div className=' border flex flex-col gap-y-10 px-5 border-[#BFBFBE] justify-center  w-[340.45px] h-[300.17px] rounded-2xl mx-auto'>
                   <div className=' w-24 h-24 rounded-full bg-[#78C448] flex justify-center items-center'>
                     <img src={step.icons} alt="" />
                   </div>
-                  <h1 className='text-3xl leading-10 font-medium w-[80%] '>{step.header}</h1>
+                  <h1 className='text-3xl leading-10 font-medium w-[60%]  '>{step.header}</h1>
                 </div>
               ))
             }

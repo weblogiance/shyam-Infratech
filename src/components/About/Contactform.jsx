@@ -64,7 +64,7 @@ const Contactform = () => {
         <h1 className=" lg:text-6xl text-4xl font-semibold mb-5 flex mx-auto   max-sm:w-fit ">Contact Us</h1>
     <div className="bg-[#EBF5FB] p-6 md:p-10 rounded-xl shadow-md w-full md:w-[740px]">
   <form className="space-y-3" onSubmit={handleSubmit}>
-    <div className="flex lg:flex flex-col gap-x-3">
+    <div className="flex lg:flex-row flex-col gap-x-3">
     <div className="space-y-2 w-full">
       <label className="block text-lg text-gray-700 font-semibold">Name</label>
       <input
@@ -94,7 +94,7 @@ const Contactform = () => {
     </div>
     </div>
 
-    <div className="flex lg:flex flex-col gap-x-3">
+    <div className="flex lg:flex-row flex-col gap-x-3">
     <div className="space-y-2 w-full">
       <label className="block text-lg text-gray-700 font-semibold">Phone Number</label>
       <PhoneInput
