@@ -45,7 +45,7 @@ const Success = () => {
                 <img src={f3} alt="" className=' absolute -top-3 right-[45px]' />
                 <img src={f2} alt="" className=' absolute right-[50px] top-[200px]' />
                 <img src={f4} alt="" className=' absolute right-[355px] top-[145px]' />
-                <div className='relative h-[45vh]'>
+                <div className='relative lg:h-[45vh]'>
 
                     <div className='w-8/12 max-sm:w-11/12 flex lg:flex-row flex-col gap-y-10 justify-around bg-black max-sm:bg-black/90   mx-auto px-10 rounded-2xl py-14'>
                         {

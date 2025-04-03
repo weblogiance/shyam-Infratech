@@ -31,7 +31,7 @@ const Team = () => {
     return (
         <div>
             <div className='my-20'>
-                <h1 className=' text-6xl font-semibold flex justify-center items-center'>Our Leadership Team</h1>
+                <h1 className=' lg:text-6xl text-4xl font-semibold flex justify-center items-center'>Our Leadership Team</h1>
                 <div className="flex lg:flex-row flex-col justify-center items-center gap-x-10 w-full  gap-y-5  place-items-center  mx-auto mt-20 lg:grid-cols-4 ">
                     {teaminfo.map((card, index) => (
                         <div key={index} className="relative group ">
@@ -58,8 +58,8 @@ const Team = () => {
                 </div>
             </div>
             <div className='mb-20 flex flex-col gap-y-5'>
-                <h1 className='flex justify-center items-center text-6xl font-semibold'>Ready to Transform Your Energy Management ?</h1>
-                <p className=' text-3xl font-medium text-center text-[#7A8D93]'>Join us in creating a more sustainable future for your business.</p>
+                <h1 className='flex justify-center items-center lg:text-6xl text-4xl max-sm:text-center font-semibold'>Ready to Transform Your Energy Management ?</h1>
+                <p className=' lg:text-3xl text-xl font-medium text-center text-[#7A8D93]'>Join us in creating a more sustainable future for your business.</p>
                 <button className='flex w-fit mx-auto bg-[#78C448] px-6 py-3 rounded-full text-white '>Contact Us Today</button>
             </div>
         </div>

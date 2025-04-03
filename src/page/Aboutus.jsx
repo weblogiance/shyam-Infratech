@@ -28,7 +28,7 @@ const aboutInfo = [
 const Aboutus = () => {
   return (
     <div>
-      <section className="relative w-full max-sm:hidden flex items-center justify-center">
+      <section className="relative w-full flex items-center justify-center">
         <div className="w-full">
           <div className="relative">
             {/* Background Image */}
@@ -50,7 +50,7 @@ const Aboutus = () => {
         </div>
       </section>
       <div className=' mt-20 w-10/12 mx-auto'>
-        <div className='flex justify-between'>
+        <div className='flex lg:flex-row flex-col gap-y-5 justify-between'>
           {
             aboutInfo.map((list, index) => (
                 <>

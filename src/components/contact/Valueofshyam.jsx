@@ -74,8 +74,8 @@ const Valueofshyam = () => {
                 </div>
             </div>
             <div>
-                <h1 className='flex justify-center items-center text-6xl font-semibold my-20'>Our Achievements</h1>
-               <div className=' flex justify-between w-9/12 mx-auto '>
+                <h1 className='flex justify-center items-center lg:text-6xl text-4xl font-semibold my-20'>Our Achievements</h1>
+               <div className=' flex lg:flex-row flex-col gap-y-5 justify-between w-9/12 mx-auto '>
                {
                     Achievements.map((reward, index) => (
                         <>
@@ -90,6 +90,7 @@ const Valueofshyam = () => {
                     ))
                 }
                </div>
+               
             </div>
         </div>
     )
