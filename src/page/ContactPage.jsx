@@ -1,7 +1,7 @@
 import React from 'react'
 import about from '../assets/image/contact.png'
 import solar from '../assets/image/solarS.png'
-import wind from '../assets/image/windS.png'
+import wind from '../assets/image/WindS.png'
 import power from '../assets/image/powerS.png'
 import Industrial from '../assets/image/industrialS.png'
 import Contactform from '../components/About/Contactform'
@@ -13,7 +13,7 @@ const service = [
     header: "Solar Energy Solutions"
   },
   {
-    icons: wind,
+    icons:wind,
     header: "Wind Power Management"
   },
   {
