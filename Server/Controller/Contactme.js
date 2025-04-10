@@ -1,12 +1,13 @@
 const GetTouch = require("../Model/GetTouch");
 const Contactme = require("../Model/Contact");
+const { em } = require("framer-motion/client");
 
 exports.gettouchour = async (req, res) => {
     try {
-        const { Name, Email,Message, countryName , countrycode , number   } = req.body;
+        const { Email,Message,Name,countryCode,countryName,phone   } = req.body;
         console.log(req.body);
         // Check if all required fields are present
-        if (!Name || !Email || !Message || !countryName || !countrycode || !number) {
+        if (!Name || !Email || !Message || !countryName || !countryCode || !phone) {
             return res.status(400).json(
                 {
                      success: false,
@@ -20,9 +21,9 @@ exports.gettouchour = async (req, res) => {
             Name,
             Email,
             CallInfo: {
-                countycode: countrycode,
-                countyName: countryName,
-                number: number
+                countryCode: countryCode,
+                countryName: countryName,
+                phone: phone
             },
             Message
         });
@@ -39,10 +40,10 @@ exports.gettouchour = async (req, res) => {
 
 exports.contactme = async (req, res) => { 
     try {
-        const { Name, Email,Message, countryName , countrycode , number , companyName , serviceType } = req.body;
+        const { Message , Name, companyName,countryCode,countryName,email,phone,serviceType } = req.body;
         console.log(req.body);
         // Check if all required fields are present
-        if (!Name || !Email || !Message || !countryName || !countrycode || !number || !companyName || !serviceType) {
+        if (!Name || !email || !Message || !countryName || !countryCode || !phone || !companyName || !serviceType) {
             return res.status(400).json(
                 {
                      success: false,
@@ -54,11 +55,11 @@ exports.contactme = async (req, res) => {
         // Create a new instance of the GetContent model
         const newContent = new Contactme({
             Name,
-            Email,
+            Email:email,
             CallInfo: {
-                countycode: countrycode,
-                countyName: countryName,
-                number: number
+                countryCode: countryCode,
+                countryName: countryName,
+                phone: phone
             },
             CompanyName: companyName,
             serviceType: serviceType,

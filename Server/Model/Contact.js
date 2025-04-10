@@ -14,15 +14,15 @@ const ContentSchema = new mongoose.Schema({
         required: true
     },
     CallInfo:{
-        countycode:{
+        countryCode:{
             type: String,
             required: true
         },
-        countyName:{
+        countryName:{
             type: String,
             required: true
         },
-        number:{
+        phone:{
             type: String,
             required: true
         }

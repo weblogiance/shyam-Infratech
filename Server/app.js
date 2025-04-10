@@ -3,6 +3,7 @@ const cors = require('cors');
 const { dbconnection } = require('./Database/db'); // Import the dbconnection function from db.js
 require('dotenv').config(); // Import dotenv to load environment variables
 const { router } = require('./Routers/auth');
+const fileUpload = require('express-fileupload');
 const app = express();
 
 const PORT = process.env.PORT || 4000;
@@ -10,7 +11,7 @@ const PORT = process.env.PORT || 4000;
 
 app.use(cors(
     {
-        origin: 'http://localhost:5000',
+        origin: 'http://localhost:5173',
         credentials: true
     }
 ));
@@ -22,6 +23,11 @@ app.get('/', (req, res) => {
     res.send('Server is running');
 }
 );
+
+app.use(fileUpload({
+    useTempFiles: true,
+    tempFileDir: '/tmp/'
+}));    
 
 // connection to Database 
 dbconnection();
